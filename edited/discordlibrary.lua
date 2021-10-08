@@ -2236,29 +2236,29 @@ function DiscordLib:Window(text)
 				Icon.ImageColor3 = Color3.fromRGB(114, 118, 125)
 				
 				if toggled then
-			           TweenService:Create(
+				    TweenService:Create(
 					Icon,
 					TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-					{ImageColor3 = Color3.fromRGB(114, 118, 125)}
+					{ImageColor3 = Color3.fromRGB(67,181,129)}
 				    ):Play()
 				    TweenService:Create(
 					ToggleFrame,
 					TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				        {BackgroundColor3 = Color3.fromRGB(114, 118, 125)}
+					{BackgroundColor3 = Color3.fromRGB(67,181,129)}
 				    ):Play()
-				    ToggleFrameCircle:TweenPosition(UDim2.new(0.234999999, -5, 0.133000001, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
+					ToggleFrameCircle:TweenPosition(UDim2.new(0.655, -5, 0.133000001, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 				    TweenService:Create(
 					Icon,
 					TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 					{ImageTransparency = 1}
 				    ):Play()
-				    Icon.Image = "http://www.roblox.com/asset/?id=6035047409"
-				    wait(.1)
+					Icon.Image = "http://www.roblox.com/asset/?id=6023426926"
+					wait(.1)
 				    TweenService:Create(
 					Icon,
 					TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 					{ImageTransparency = 0}
-				    ):Play()
+				    ):Play()				    
 			        else
 			           -- edited by metacalled!
 				end
@@ -2316,8 +2316,8 @@ function DiscordLib:Window(text)
 					toggled = not toggled
 					pcall(callback, toggled)
 				end)
-				
-				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
+			
+			   ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
 			end
 			
 			function ChannelContent:Slider(text, min, max, start, callback)
