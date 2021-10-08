@@ -1,3 +1,12 @@
+--[[
+    lasted edited 08/10/2021
+    
+    what did i fix?
+
+    - Colorpicker now sets the title to the text you want!
+    - Toggle can now have default set values ( it used to not work AT ALL! )
+]]
+
 local DiscordLib = {}
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
